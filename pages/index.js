@@ -1,5 +1,9 @@
 //1. Import Area
 import Head from 'next/head'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Section from '../components/Section';
+import Aside from '../components/Aside';
 //Import something from 'some library/location';
 
 // `pages/_app.js`
@@ -13,16 +17,12 @@ function Home() {
         <title>Welcome to my first Next Application</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-          Header Component2
-      </header>
+      <Header />
       <main>
-          <aside>Aside Compoent2</aside>
-          <section>Section Component2</section>
+          <Aside />
+          <Section />
       </main>
-      <footer>
-        Footer Component2
-      </footer>
+      <Footer />
     </>
   )
 }
